@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+- Preview: https://main--teksystems-ue-demo--sanya-singh-adobe.aem.page/
+- Live: https://main--teksystems-ue-demo--sanya-singh-adobe.aem.live/
 
 ## Documentation
 
