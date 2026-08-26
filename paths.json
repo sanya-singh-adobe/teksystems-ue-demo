@@ -1,6 +1,7 @@
 {
   "mappings": [
-    "/content/teksystems-ue-demo/:/"
+    "/content/teksystems-ue-demo/:/",
+    "/content/teksystems-ue-demo/configuration:/.helix/config.json"
   ],
   "includes": [
     "/content/teksystems-ue-demo/"
