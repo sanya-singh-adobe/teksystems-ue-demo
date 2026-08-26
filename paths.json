@@ -1,0 +1,8 @@
+{
+  "mappings": [
+    "/content/teksystems-ue-demo/:/"
+  ],
+  "includes": [
+    "/content/teksystems-ue-demo/"
+  ]
+}
