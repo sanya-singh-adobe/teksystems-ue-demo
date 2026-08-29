@@ -21,7 +21,7 @@
       "id": "hero-insights",
       "fields": [
         {
-          "component": "reference",
+          "component": "richtext",
           "valueType": "string",
           "name": "image",
           "label": "Image",

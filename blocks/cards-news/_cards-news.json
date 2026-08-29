@@ -16,15 +16,15 @@
       }
     },
     {
-      "title": "Card",
-      "id": "card",
+      "title": "Cards News Item",
+      "id": "cards-news-item",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
               "name": "Card",
-              "model": "card"
+              "model": "cards-news-item"
             }
           }
         }
@@ -33,10 +33,10 @@
   ],
   "models": [
     {
-      "id": "card",
+      "id": "cards-news-item",
       "fields": [
         {
-          "component": "reference",
+          "component": "richtext",
           "valueType": "string",
           "name": "image",
           "label": "Image",
@@ -56,7 +56,7 @@
     {
       "id": "cards-news",
       "components": [
-        "card"
+        "cards-news-item"
       ]
     }
   ]

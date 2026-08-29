@@ -142,10 +142,10 @@
     ]
   },
   {
-    "id": "card",
+    "id": "cards-insights-item",
     "fields": [
       {
-        "component": "reference",
+        "component": "richtext",
         "valueType": "string",
         "name": "image",
         "label": "Image",
@@ -161,10 +161,10 @@
     ]
   },
   {
-    "id": "card",
+    "id": "cards-news-item",
     "fields": [
       {
-        "component": "reference",
+        "component": "richtext",
         "valueType": "string",
         "name": "image",
         "label": "Image",
@@ -240,7 +240,7 @@
     "id": "embed-video",
     "fields": [
       {
-        "component": "reference",
+        "component": "richtext",
         "valueType": "string",
         "name": "embed_placeholder",
         "label": "Placeholder Image",
@@ -275,7 +275,7 @@
     "id": "hero-insights",
     "fields": [
       {
-        "component": "reference",
+        "component": "richtext",
         "valueType": "string",
         "name": "image",
         "label": "Image",

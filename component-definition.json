@@ -98,15 +98,15 @@
           }
         },
         {
-          "title": "Card",
-          "id": "card",
+          "title": "Cards Insights Item",
+          "id": "cards-insights-item",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Card",
-                  "model": "card"
+                  "model": "cards-insights-item"
                 }
               }
             }
@@ -128,15 +128,15 @@
           }
         },
         {
-          "title": "Card",
-          "id": "card",
+          "title": "Cards News Item",
+          "id": "cards-news-item",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Card",
-                  "model": "card"
+                  "model": "cards-news-item"
                 }
               }
             }

@@ -21,7 +21,7 @@
       "id": "embed-video",
       "fields": [
         {
-          "component": "reference",
+          "component": "richtext",
           "valueType": "string",
           "name": "embed_placeholder",
           "label": "Placeholder Image",
