@@ -1,33 +1,95 @@
 .columns-feature > div {
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 
 .columns-feature img {
+  display: block;
   width: 100%;
+  height: auto;
+  border-radius: 15px;
 }
 
+/* text column */
 .columns-feature > div > div {
   order: 1;
 }
 
+/* image column */
 .columns-feature > div > .columns-feature-img-col {
   order: 0;
 }
 
-.columns-feature > div > .columns-feature-img-col img {
-  display: block;
+/* body paragraphs in text column */
+.columns-feature > div > div:not(.columns-feature-img-col) > p {
+  margin: 0 0 24px;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--brand-body-text);
+}
+
+/* eyebrow: "Success Story" (first paragraph in text column) */
+.columns-feature > div > div:not(.columns-feature-img-col) > p:first-child {
+  margin: 0 0 4px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--brand-teal-dark);
+}
+
+.columns-feature > div > div:not(.columns-feature-img-col) > p:last-child {
+  margin-bottom: 0;
+}
+
+.columns-feature h2 {
+  margin: 0 0 16px;
+  font-family: var(--body-font-family);
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--brand-body-text);
+}
+
+/* "Get The Story" ghost button */
+.columns-feature a:any-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--brand-lime);
+  border-radius: 10px;
+  padding: 16px;
+  background-color: transparent;
+  color: var(--brand-navy);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.columns-feature a:hover {
+  background-color: var(--brand-lime);
+  color: var(--brand-navy);
+  text-decoration: none;
 }
 
 @media (width >= 900px) {
   .columns-feature > div {
+    flex-direction: row;
     align-items: center;
-    flex-direction: unset;
-    gap: 24px;
+    gap: 48px;
   }
 
   .columns-feature > div > div {
     flex: 1;
     order: unset;
+  }
+
+  .columns-feature > div > .columns-feature-img-col {
+    order: unset;
+    max-width: 540px;
   }
 }

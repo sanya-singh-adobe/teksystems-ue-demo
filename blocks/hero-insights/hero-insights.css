@@ -1,37 +1,107 @@
-.hero-insights-container .hero-insights-wrapper {
-  max-width: unset;
-  padding: 0;
-}
-
 .hero-insights {
-  position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 30px 0 0;
 }
 
-.hero-insights h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+.hero-insights > div {
+  width: 100%;
+}
+
+/* text column first on mobile below image order handled per breakpoint */
+.hero-insights > div:last-child {
+  order: 0;
+}
+
+/* image column */
+.hero-insights > div:first-child {
+  order: 1;
+}
+
+.hero-insights h2 {
+  margin: 0 0 4px;
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--brand-teal);
+}
+
+.hero-insights h3 {
+  margin: 0 0 16px;
+  font-family: var(--body-font-family);
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--brand-body-text);
+}
+
+.hero-insights p {
+  margin: 0 0 24px;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--brand-body-text);
 }
 
 .hero-insights picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+  display: block;
+  line-height: 0;
 }
 
 .hero-insights img {
-  object-fit: cover;
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.hero-insights p:last-child {
+  margin-bottom: 0;
+}
+
+/* "Read The Report" ghost button */
+.hero-insights a:any-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--brand-lime);
+  border-radius: 10px;
+  padding: 16px;
+  background-color: transparent;
+  color: var(--brand-navy);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.hero-insights a:hover {
+  background-color: var(--brand-lime);
+  color: var(--brand-navy);
+  text-decoration: none;
 }
 
 @media (width >= 900px) {
   .hero-insights {
-    padding: 40px 32px;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+    padding: 30px 0 60px;
+  }
+
+  .hero-insights > div:first-child {
+    order: 1;
+    flex: 0 0 40%;
+    max-width: 440px;
+  }
+
+  .hero-insights > div:last-child {
+    order: 0;
+    flex: 1;
   }
 }

@@ -1,27 +1,269 @@
+/* stylelint-disable no-descending-specificity */
 .cards-insights > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  grid-template-columns: 1fr;
+  gap: 40px 30px;
 }
 
 .cards-insights > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  background-color: transparent;
 }
 
 .cards-insights .cards-insights-card-body {
-  margin: 16px;
+  margin: 0;
 }
 
 .cards-insights .cards-insights-card-image {
   line-height: 0;
+  margin-bottom: 20px;
 }
 
 .cards-insights > ul > li img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  border-radius: 15px;
+}
+
+/* card description (generic paragraphs) */
+.cards-insights .cards-insights-card-body > p {
+  margin: 0 0 20px;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--brand-body-text);
+}
+
+/* category tag (first paragraph in card body) */
+.cards-insights .cards-insights-card-body > p:first-child {
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--brand-teal);
+}
+
+/* "Read More" green arrow link (last paragraph) */
+.cards-insights .cards-insights-card-body > p:last-child {
+  margin-bottom: 0;
+}
+
+/* card title */
+.cards-insights .cards-insights-card-body h3 {
+  margin: 0 0 10px;
+  font-family: var(--body-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--brand-navy);
+}
+
+.cards-insights .cards-insights-card-body h3 a:any-link {
+  color: var(--brand-navy);
+  text-decoration: none;
+}
+
+.cards-insights .cards-insights-card-body h3 a:hover {
+  color: var(--brand-teal);
+  text-decoration: none;
+}
+
+.cards-insights .cards-insights-card-body > p:last-child a:any-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--brand-green);
+  text-decoration: none;
+}
+
+.cards-insights .cards-insights-card-body > p:last-child a::after {
+  content: "→";
+  margin-left: 8px;
+}
+
+.cards-insights .cards-insights-card-body > p:last-child a:hover {
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+/* ===== listing instance: filter bar + pagination + 2-then-3 grid ===== */
+.cards-insights-listing .cards-insights-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.cards-insights-listing .cards-insights-facets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.cards-insights-listing .cards-insights-clear {
+  font-size: 16px;
+  color: var(--brand-teal);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cards-insights-listing .cards-insights-facet {
+  flex: 1 1 auto;
+  min-width: 180px;
+  box-sizing: border-box;
+  padding: 15px 30px 15px 15px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background-color: #fff;
+  background-image: linear-gradient(45deg, transparent 50%, #333 50%), linear-gradient(135deg, #333 50%, transparent 50%);
+  background-position: calc(100% - 18px) 21px, calc(100% - 12px) 21px;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  color: #333;
+  cursor: default;
+}
+
+.cards-insights-listing .cards-insights-search {
+  display: flex;
+  align-items: stretch;
+}
+
+.cards-insights-listing .cards-insights-search input {
+  flex: 1;
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 11px 24px;
+  border: 1px solid #bbb;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  background-color: #fff;
+  font-size: 16px;
+  color: var(--brand-body-text);
+}
+
+.cards-insights-listing .cards-insights-search-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+  border: 1px solid var(--brand-lime);
+  border-radius: 0 6px 6px 0;
+  background-color: var(--brand-lime);
+  color: var(--brand-navy);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* pagination */
+.cards-insights-listing .cards-insights-pagination {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.cards-insights-listing .cards-insights-pagination ul {
+  display: flex;
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+}
+
+.cards-insights-listing .cards-insights-pagination li {
+  margin: 0;
+}
+
+.cards-insights-listing .cards-insights-pagination li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 40px;
+  padding: 0 12px;
+  margin-left: -1px;
+  border: 1px solid var(--brand-navy);
+  background-color: #fff;
+  color: var(--brand-navy);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.cards-insights-listing .cards-insights-pagination li:first-child a {
+  border-radius: 4px 0 0 4px;
+  margin-left: 0;
+  color: #666;
+}
+
+.cards-insights-listing .cards-insights-pagination li:last-child a {
+  border-radius: 0 4px 4px 0;
+}
+
+.cards-insights-listing .cards-insights-pagination li.active a {
+  background-color: var(--brand-navy);
+  color: #fff;
+}
+
+/* ===== Success Stories instance: horizontal cards (image left) ===== */
+.cards-insights-stories > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cards-insights-stories > ul > li {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.cards-insights-stories .cards-insights-card-image {
+  flex: 0 0 auto;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.cards-insights-stories .cards-insights-card-body {
+  flex: 1;
+}
+
+.cards-insights-stories .cards-insights-card-body h3 {
+  font-size: 24px;
+}
+
+@media (width >= 600px) {
+  .cards-insights-stories > ul > li {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cards-insights-stories .cards-insights-card-image {
+    width: 250px;
+  }
+
+  .cards-insights-stories > ul > li img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (width >= 600px) {
+  .cards-insights-listing > ul {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  /* first row: 2 cards */
+  .cards-insights-listing > ul > li:nth-child(1),
+  .cards-insights-listing > ul > li:nth-child(2) {
+    grid-column: span 3;
+  }
+
+  /* subsequent rows: 3 cards each */
+  .cards-insights-listing > ul > li:nth-child(n+3) {
+    grid-column: span 2;
+  }
 }
