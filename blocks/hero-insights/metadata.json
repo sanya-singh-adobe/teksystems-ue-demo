@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-insights",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-08-29T08:50:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.teksystems.com/en/insights",
+    "originPage": "Insights listing landing page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + subheading + paragraph + 1 CTA + accent graphic",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "landing page intros with a featured promo",
+      "report/campaign hero promos",
+      "text-forward hero banners with a supporting graphic"
+    ],
+    "notSuitableFor": [
+      "full-bleed dark photographic hero banners",
+      "heroes without any heading text"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en/insights"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-29T08:50:00.000Z"
+  }
+}

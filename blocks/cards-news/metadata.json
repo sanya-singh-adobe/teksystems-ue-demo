@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-news",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-08-29T08:50:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.teksystems.com/en/insights",
+    "originPage": "Insights listing landing page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "newsroom-list",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "date + title link",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "newsroom / press-release lists",
+      "dated headline lists without images",
+      "compact text-only card lists"
+    ],
+    "notSuitableFor": [
+      "image-forward card grids",
+      "cards requiring a CTA button or description block"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en/insights"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-29T08:50:00.000Z"
+  }
+}
