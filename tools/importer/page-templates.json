@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "projectType": "xwalk"
+  },
+  "templates": [
+    {
+      "name": "insights",
+      "urls": [
+        "https://www.teksystems.com/en/insights"
+      ],
+      "representativeUrl": "https://www.teksystems.com/en/insights",
+      "urlPattern": "/en/*",
+      "description": "Insights landing page: intro hero promo, faceted insight tile listing, featured success-story columns, video + success stories + newsroom, and a Connect With Us social band.",
+      "blocks": [
+        {
+          "name": "hero-insights",
+          "instances": [
+            ".score-stripe.padding-top-30px.cover .score-column2.wide-left.vertically-center-alignment-desktop"
+          ]
+        },
+        {
+          "name": "cards-insights",
+          "instances": [
+            ".score-tile-grid",
+            ".collection-left"
+          ]
+        },
+        {
+          "name": "columns-feature",
+          "instances": [
+            ".score-column2.equal.vertically-center-alignment-tablet.tablet-width-initial"
+          ]
+        },
+        {
+          "name": "embed-video",
+          "instances": [
+            ".video-container"
+          ]
+        },
+        {
+          "name": "cards-news",
+          "instances": [
+            ".news.collection-short"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "rc3",
+          "name": "Insights intro + featured report promo",
+          "selector": "#main-content > div.score-stripe.padding-top-30px.cover",
+          "style": null,
+          "blocks": [
+            "hero-insights"
+          ],
+          "defaultContent": [
+            "#main-content > div.score-stripe.padding-top-30px.cover .score-breadcrumb",
+            "#main-content > div.score-stripe.padding-top-30px.cover .score-content-spot.h1-type-2"
+          ]
+        },
+        {
+          "id": "rc4",
+          "name": "Insights listing grid",
+          "selector": "#main-content > div.score-stripe.animate.fadeInUp:nth-of-type(2)",
+          "style": null,
+          "blocks": [
+            "cards-insights"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc5",
+          "name": "Featured success story (columns)",
+          "selector": "#main-content > div.score-stripe.animate.divide-top.fadeInUp:nth-of-type(3)",
+          "style": null,
+          "blocks": [
+            "columns-feature"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc6",
+          "name": "Video + Success Stories + Newsroom",
+          "selector": "#main-content > div.score-stripe.animate.divide-top.extra-padding.top.fadeInUp",
+          "style": null,
+          "blocks": [
+            "embed-video",
+            "cards-insights",
+            "cards-news"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc7",
+          "name": "Connect with Us social band",
+          "selector": "#main-content > div.score-stripe.connect-with-us",
+          "style": "highlight",
+          "blocks": [],
+          "defaultContent": [
+            "#main-content > div.score-stripe.connect-with-us"
+          ]
+        }
+      ]
+    }
+  ]
+}

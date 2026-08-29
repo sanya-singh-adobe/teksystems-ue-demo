@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-insights",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-08-29T08:50:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.teksystems.com/en/insights",
+    "originPage": "Insights listing landing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "content-listing",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + category tag + title + description + CTA link",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "insight/article listing grids",
+      "success-story card grids",
+      "resource tiles with image + tag + title + description + CTA"
+    ],
+    "notSuitableFor": [
+      "text-only lists with no images",
+      "single-feature highlights"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en/insights"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-29T08:50:00.000Z"
+  }
+}

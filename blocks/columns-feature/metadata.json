@@ -1,0 +1,38 @@
+{
+  "variantName": "columns-feature",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-08-29T08:50:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.teksystems.com/en/insights",
+    "originPage": "Insights listing landing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "feature-promo",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "text column (eyebrow + heading + paragraph + CTA) + image column",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "side-by-side text + image feature promos",
+      "two-up content/media layouts",
+      "success-story spotlight sections"
+    ],
+    "notSuitableFor": [
+      "grids of repeatable items (use cards)",
+      "stacked single-column content"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en/insights"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-29T08:50:00.000Z"
+  }
+}

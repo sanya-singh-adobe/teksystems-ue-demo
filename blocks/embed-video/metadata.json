@@ -1,0 +1,38 @@
+{
+  "variantName": "embed-video",
+  "baseBlock": "embed",
+  "version": "1.0.0",
+  "created": "2026-08-29T08:50:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.teksystems.com/en/insights",
+    "originPage": "Insights listing landing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "video-feature",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "poster image + external video URL (YouTube)",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "featured YouTube/Vimeo videos with a poster image",
+      "click-to-play embedded video sections",
+      "marketing/brand video highlights"
+    ],
+    "notSuitableFor": [
+      "self-hosted video files (consider the video block)",
+      "social embeds without a poster image"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/en/insights"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-29T08:50:00.000Z"
+  }
+}
