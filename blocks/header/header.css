@@ -354,15 +354,15 @@ header nav .nav-tools .nav-control-panel ul {
   }
 
   header nav .nav-tools .nav-location > a::before {
-    background-image: url("/images/icon-location.svg");
+    background-image: url("/icons/icon-location.svg");
   }
 
   header nav .nav-tools .nav-locale .nav-control-trigger::before {
-    background-image: url("/images/icon-globe.svg");
+    background-image: url("/icons/icon-globe.svg");
   }
 
   header nav .nav-tools .nav-search .nav-control-trigger::before {
-    background-image: url("/images/icon-search.svg");
+    background-image: url("/icons/icon-search.svg");
   }
 
   /* utility dropdown panels float below their trigger */
