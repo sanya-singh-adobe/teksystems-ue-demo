@@ -337,6 +337,34 @@ header nav .nav-tools .nav-control-panel ul {
     color: var(--nav-link-hover);
   }
 
+  /* utility icons: sit in the reserved 40px left padding */
+  header nav .nav-tools .nav-location > a::before,
+  header nav .nav-tools .nav-locale .nav-control-trigger::before,
+  header nav .nav-tools .nav-search .nav-control-trigger::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  header nav .nav-tools .nav-location > a::before {
+    background-image: url("/images/icon-location.svg");
+  }
+
+  header nav .nav-tools .nav-locale .nav-control-trigger::before {
+    background-image: url("/images/icon-globe.svg");
+  }
+
+  header nav .nav-tools .nav-search .nav-control-trigger::before {
+    background-image: url("/images/icon-search.svg");
+  }
+
   /* utility dropdown panels float below their trigger */
   header nav .nav-tools .nav-control-panel {
     position: absolute;

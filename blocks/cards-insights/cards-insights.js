@@ -9,15 +9,15 @@ function buildFilterBar() {
   const bar = document.createElement('div');
   bar.className = 'cards-insights-filters';
   bar.innerHTML = `
-    <div class="cards-insights-facets">
-      <a class="cards-insights-clear" href="#" tabindex="-1" aria-hidden="true">Clear All</a>
+    <a class="cards-insights-clear" href="#" tabindex="-1" aria-hidden="true">Clear All</a>
+    <div class="cards-insights-row">
       <div class="cards-insights-facet">Service</div>
       <div class="cards-insights-facet">Content Type</div>
       <div class="cards-insights-facet">Industry</div>
-    </div>
-    <div class="cards-insights-search">
-      <input type="text" placeholder="Search" aria-label="Search" disabled>
-      <a class="cards-insights-search-btn" href="#" tabindex="-1" aria-hidden="true">Search</a>
+      <div class="cards-insights-search">
+        <input type="text" placeholder="Search" aria-label="Search" disabled>
+        <a class="cards-insights-search-btn" href="#" tabindex="-1" aria-hidden="true">Search</a>
+      </div>
     </div>`;
   return bar;
 }
