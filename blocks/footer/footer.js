@@ -72,5 +72,37 @@ export default async function decorate(block) {
     cols.forEach((col) => row.append(col));
   }
 
+  // Ensure chrome images survive the fragment round-trip. When stored in JCR,
+  // an image-wrapped-in-link can lose its <img>; restore from repo-served
+  // /icons so the brand logo and social icons always render.
+  const brand = footer.querySelector('.footer-brand');
+  if (brand) {
+    let brandImg = brand.querySelector('img');
+    if (!brandImg) {
+      brandImg = document.createElement('img');
+      const holder = brand.querySelector('a') || brand.querySelector('p') || brand;
+      holder.append(brandImg);
+    }
+    brandImg.src = '/icons/tek-tgs-footer-logo.svg';
+    brandImg.alt = 'TEKsystems and TGS combined logo';
+  }
+  const socialMap = [
+    ['linkedin', 'TEKsystems LinkedIn'],
+    ['facebook', 'TEKsystems Facebook'],
+    ['youtube', 'TEKsystems YouTube'],
+    ['twitter', 'TEKsystems Twitter'],
+    ['instagram', 'TEKsystems Instagram'],
+  ];
+  footer.querySelectorAll('.footer-legal a[href]').forEach((a) => {
+    const match = socialMap.find(([key]) => a.getAttribute('href').includes(key));
+    if (match && !a.querySelector('img')) {
+      const icon = document.createElement('img');
+      [, icon.alt] = match;
+      icon.src = `/icons/${match[0]}.svg`;
+      a.textContent = '';
+      a.append(icon);
+    }
+  });
+
   block.append(footer);
 }
