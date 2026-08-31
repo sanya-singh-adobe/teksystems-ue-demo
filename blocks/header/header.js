@@ -191,6 +191,11 @@ export default async function decorate(block) {
       const label = link.textContent.trim().toLowerCase();
       if (label === 'search') buildControl(link, 'search', nav);
       else if (label.includes('english') || label.includes('locale')) buildControl(link, 'locale', nav);
+      else {
+        // remaining utility link (e.g. Locations): tag its owner for icon styling
+        const li = link.closest('li');
+        if (li) li.classList.add('nav-control', 'nav-location');
+      }
     });
   }
 
