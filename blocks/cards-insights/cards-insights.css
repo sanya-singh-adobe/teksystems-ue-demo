@@ -94,29 +94,34 @@
 .cards-insights-listing .cards-insights-filters {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-bottom: 40px;
+  gap: 8px;
+  margin-bottom: 30px;
 }
 
-.cards-insights-listing .cards-insights-facets {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12px;
-}
-
+/* "Clear All" sits on its own line above the row of facets/search */
 .cards-insights-listing .cards-insights-clear {
+  align-self: flex-start;
   font-size: 16px;
   color: var(--brand-teal);
   text-decoration: none;
   white-space: nowrap;
+  opacity: 0.6;
+}
+
+/* the facets + search share one horizontal line (wraps on mobile) */
+.cards-insights-listing .cards-insights-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  gap: 12px;
 }
 
 .cards-insights-listing .cards-insights-facet {
-  flex: 1 1 auto;
+  flex: 1 1 180px;
   min-width: 180px;
   box-sizing: border-box;
-  padding: 15px 30px 15px 15px;
+  height: 48px;
+  padding: 13px 30px 13px 15px;
   border: 1px solid #bbb;
   border-radius: 4px;
   background-color: #fff;
@@ -130,14 +135,17 @@
 }
 
 .cards-insights-listing .cards-insights-search {
+  flex: 1 1 260px;
   display: flex;
   align-items: stretch;
+  min-width: 220px;
 }
 
 .cards-insights-listing .cards-insights-search input {
   flex: 1;
   box-sizing: border-box;
   min-width: 0;
+  height: 48px;
   padding: 11px 24px;
   border: 1px solid #bbb;
   border-right: none;
@@ -150,9 +158,10 @@
 .cards-insights-listing .cards-insights-search-btn {
   display: inline-flex;
   align-items: center;
-  padding: 0 20px;
+  height: 48px;
+  padding: 0 24px;
   border: 1px solid var(--brand-lime);
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 4px 4px 0;
   background-color: var(--brand-lime);
   color: var(--brand-navy);
   font-size: 16px;
