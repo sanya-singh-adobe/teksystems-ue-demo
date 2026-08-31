@@ -4,6 +4,12 @@
   gap: 30px;
 }
 
+.columns-feature picture {
+  display: block;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
 .columns-feature img {
   display: block;
   width: 100%;

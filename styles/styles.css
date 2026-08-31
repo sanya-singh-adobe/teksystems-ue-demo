@@ -496,24 +496,24 @@ main .section.highlight ul li a {
 }
 
 main .section.highlight ul li a[href*="linkedin"] {
-  background-image: url("/images/social-linkedin.svg");
+  background-image: url("/icons/social-linkedin.svg");
 }
 
 main .section.highlight ul li a[href*="facebook"] {
-  background-image: url("/images/social-facebook.svg");
+  background-image: url("/icons/social-facebook.svg");
 }
 
 main .section.highlight ul li a[href*="youtube"] {
-  background-image: url("/images/social-youtube.svg");
+  background-image: url("/icons/social-youtube.svg");
 }
 
 main .section.highlight ul li a[href*="twitter"],
 main .section.highlight ul li a[href*="x.com"] {
-  background-image: url("/images/social-twitter.svg");
+  background-image: url("/icons/social-twitter.svg");
 }
 
 main .section.highlight ul li a[href*="instagram"] {
-  background-image: url("/images/social-instagram.svg");
+  background-image: url("/icons/social-instagram.svg");
 }
 
 main .section.highlight ul li a:hover {
