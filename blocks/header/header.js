@@ -159,6 +159,18 @@ export default async function decorate(block) {
       const container = brandLink.closest('.button-container');
       if (container) container.className = '';
     }
+    // Ensure the logo image is always present. When the nav fragment is stored
+    // in JCR (xwalk), an image-wrapped-in-link can be flattened to a text-less
+    // button that drops the <img>. Fall back to the repo-served logo so the
+    // brand mark renders regardless of how the fragment round-trips.
+    const brandAnchor = navBrand.querySelector('a');
+    if (brandAnchor && !brandAnchor.querySelector('img')) {
+      const logo = document.createElement('img');
+      logo.src = '/icons/teksystems-logo.svg';
+      logo.alt = 'TEKsystems';
+      brandAnchor.textContent = '';
+      brandAnchor.append(logo);
+    }
   }
 
   // main nav sections: mark items that own a sub-panel and wire click toggles

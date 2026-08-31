@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content cq:template="/libs/core/franklin/templates/page" sling:resourceType="core/franklin/components/page/v1/page" jcr:primaryType="cq:PageContent">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/root/v1/root">
+      <section sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="/icons/tek-tgs-footer-logo.svg" imageAlt="TEKsystems and TGS combined logo"/>
+      </section>
+      <section_1 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;A new world of opportunity awaits. We stand ready to partner side by side with you. Whether it&#x27;s developing solutions that transform your technology stack, your business or your workforce, we&#x27;re in it with you. Let&#x27;s own change, together.&lt;/p&gt;"/>
+      </section_1>
+      <section_2 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Resources" titleType="h2"/>
+        <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;ul&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/en/contact-us&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/en/careers/internal-careers&quot;&gt;Internal Careers&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/en/careers/labor-condition-applications&quot;&gt;LCA&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/en/locations&quot;&gt;Locations&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/en/who-we-are/partnerships&quot;&gt;Technology Partnerships&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/en/site-map&quot;&gt;Site Map&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;"/>
+      </section_2>
+      <section_3 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Policies" titleType="h2"/>
+        <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;ul&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;https://www.teksystems.com/-/media/teksystems/files/ai-principles-and-governance.pdf&quot;&gt;AI Principles and Governance&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/en/privacy-notices/ca-notice-at-collection&quot;&gt;CA Notice at Collection&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/en/privacy-notices/ca-notice-at-collection-employees&quot;&gt;CA Notice at Collection (for Employees and Job Applicants)&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;https://www.allegisgroup.com/about/code-of-conduct&quot;&gt;Code of Conduct&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;https://www.allegisgroup.com/en/1095-c-request&quot;&gt;1095-C Request&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/en/cookie-policy&quot;&gt;Cookie Notice&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/en/privacy-notices&quot;&gt;Do Not Sell or Share My Personal Information&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/en/lv-licensing&quot;&gt;Low Voltage and Security Licensing&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;https://www.allegisgroup.com/mandatory-notices&quot;&gt;Mandatory Notices&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/en/privacy-notices&quot;&gt;Privacy Notices&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;https://www.allegisgroup.com/terms-and-conditions&quot;&gt;Terms and Conditions&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;/en/privacy-notices&quot;&gt;Your Privacy Choices&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;"/>
+      </section_3>
+      <section_4 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;© 2026 TEKsystems, Inc. ALL RIGHTS RESERVED.&lt;/p&gt;&lt;p&gt;© 2026 TEKsystems Global Services, LLC ALL RIGHTS RESERVED.&lt;/p&gt;&lt;ul&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;https://www.linkedin.com/company/2152?trk&#x3D;vsrp_companies_res_name&amp;#x26;trkInfo&#x3D;VSRPsearchId:394525511380288772477,VSRPtargetId:2152,VSRPcmpt:primary&quot;&gt;&lt;img src&#x3D;&quot;/icons/linkedin.svg&quot; alt&#x3D;&quot;TEKsystems LinkedIn&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;https://www.facebook.com/teksystems/&quot;&gt;&lt;img src&#x3D;&quot;/icons/facebook.svg&quot; alt&#x3D;&quot;TEKsystems Facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;https://www.youtube.com/user/TEKsystems08&quot;&gt;&lt;img src&#x3D;&quot;/icons/youtube.svg&quot; alt&#x3D;&quot;TEKsystems YouTube&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;https://twitter.com/TEKsystems&quot;&gt;&lt;img src&#x3D;&quot;/icons/twitter.svg&quot; alt&#x3D;&quot;TEKsystems Twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;https://www.instagram.com/teksystems/&quot;&gt;&lt;img src&#x3D;&quot;/icons/instagram.svg&quot; alt&#x3D;&quot;TEKsystems Instagram&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;"/>
+      </section_4>
+      <section_5 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;Please note, the information provided on this website may contain content that may not reflect our Asia-Pacific or European markets. Please contact your local TEKsystems office with any questions or for additional information.&lt;/p&gt;"/>
+      </section_5>
+    </root>
+  </jcr:content>
+</jcr:root>
